@@ -7,7 +7,4 @@
     "name": "qazxd",
     "email": ""
   }
-  "dependencies": {
-    "urllib-sync": "^1.1.2"
-  }
 }
