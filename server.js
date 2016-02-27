@@ -8,7 +8,7 @@ var Youku = require('./extractor/Youku.js');
 
 var Temp = require('./temp.js');
 
-var port = process.env.port || 1337;
+var port = process.env.port || 18080;
 http.createServer(function (req, res) {
     var obj = url.parse(req.url);
     switch (obj.pathname) {

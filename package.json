@@ -7,4 +7,9 @@
     "name": "qazxd",
     "email": ""
   }
+
+  "scripts": {
+    "start": "node server.js" 
+
+  }
 }
