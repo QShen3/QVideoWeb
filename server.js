@@ -24,9 +24,9 @@ http.createServer(function (req, res) {
             res.end(youku.extractor());
             break;
         default:
-            var youku = new Youku('XMTQzNzQ0NDc2OA==', 'mp4hd3');
-            res.end(youku.extractor());
-            //res.end(Temp.temp());
+            //var youku = new Youku('XMTQzNzQ0NDc2OA==', 'mp4hd3');
+            //res.end(youku.extractor());
+            res.end('Hello world');
             break;
     }
 
