@@ -1,15 +1,14 @@
 {
-  "name": "QVideoWebJs",
-  "version": "0.1.0",
-  "description": "QVideoWebJs",
-  "main": "server.js",
   "author": {
     "name": "qazxd",
-    "email": ""
-  }
-
+    "email": "qazxdrcssc2006@163.com"
+  },
+  "description": "QVideoWebJs",
+  "main": "server.js",
+  "name": "QVideoWebJs",
   "scripts": {
-    "start": "node server.js" 
+    "start": "node server.js"
 
-  }
+  },
+  "version": "0.1.0"
 }
