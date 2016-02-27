@@ -1,0 +1,13 @@
+{
+  "name": "QVideoWebJs",
+  "version": "0.1.0",
+  "description": "QVideoWebJs",
+  "main": "server.js",
+  "author": {
+    "name": "qazxd",
+    "email": ""
+  }
+  "dependencies": {
+    "urllib-sync": "^1.1.2"
+  }
+}
