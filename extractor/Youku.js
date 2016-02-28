@@ -157,7 +157,12 @@
                 var ep = generate_ep(no, obj1.data.stream[i].stream_fileid, sid, token);
                 var q = "ctype=12&ev=1&K=" + k + "&ep=" + ep + "&oip=" + ip + "&token=" + token + "&yxon=1";
                 var u = "http://k.youku.com/player/getFlvPath/sid/" + sid + "_00/st/" + steam_types[obj1.data.stream[i].stream_type].container + "/fileid/" + filedId + "?" + q;
-                videoinfo.urls[no] = JSON.parse(urllib_sync.request(u).data)[0].server;
+                try {
+                    videoinfo.urls[no] = JSON.parse(urllib_sync.request(u).data)[0].server;
+                }
+                    catch (e) {
+                    videoinfo.urls[no] = '';
+                }
                 
             }
         }
