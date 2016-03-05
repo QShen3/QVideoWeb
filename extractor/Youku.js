@@ -140,6 +140,8 @@
                     }
                 
                 }
+                i = 0;
+                break;
             }
         }
         if (i == obj1.data.stream.length - 1) {
