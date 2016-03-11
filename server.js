@@ -23,6 +23,16 @@ http.createServer(function (req, res) {
             var youku = new Youku(qs.id, qs.format);           
             res.end(youku.extractor());
             break;
+        case '/exec':
+            var result = "";
+            var spawn = require("child_process").spawn;
+            
+            var test = spawn("python", ["--version"]);
+            
+            test.stdout.on("data", function (data) { result += data });
+            test.stdout.on("end", function (data) { res.end(result) });
+            test.stdout.on("exit", function (code) { if (code != 0) { res.end(code) } });
+            break;
         default:
             //var youku = new Youku('XMTQzNzQ0NDc2OA==', 'mp4hd3');
             //res.end(youku.extractor());
